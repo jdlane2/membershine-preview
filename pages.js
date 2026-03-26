@@ -297,7 +297,7 @@ documents: `
 </div>
 <div class="table-footer" style="margin-top:1rem">
   <span>Showing 8 of 24 items</span>
-  <span>Storage: 156 MB of 5 GB</span>
+  <span>Storage: 156 MB used</span>
 </div>
 `,
 
