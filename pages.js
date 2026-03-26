@@ -3,7 +3,7 @@ const PAGES = {
 
 dashboard: `
 <h1 class="page-title">Dashboard</h1>
-<p class="page-subtitle">Welcome back, John. Here's your community overview.</p>
+<p class="page-subtitle">Welcome back, Alex. Here's your community overview.</p>
 <div class="stat-cards">
   <div class="stat-card"><div class="stat-label">Active Members</div><div class="stat-value text-primary">156</div></div>
   <div class="stat-card"><div class="stat-label">Properties</div><div class="stat-value text-primary">142</div></div>
@@ -16,7 +16,7 @@ dashboard: `
     <thead><tr><th>Date</th><th>Event</th><th>Details</th><th>Status</th></tr></thead>
     <tbody>
       <tr><td>Mar 20</td><td>Payment Received</td><td>Unit 101 — $450.00 monthly assessment</td><td><span class="badge-pill badge-success">Completed</span></td></tr>
-      <tr><td>Mar 19</td><td>New Member</td><td>Tyler McDonald added to Unit 215</td><td><span class="badge-pill badge-info">New</span></td></tr>
+      <tr><td>Mar 19</td><td>New Member</td><td>Marcus Webb added to Unit 215</td><td><span class="badge-pill badge-info">New</span></td></tr>
       <tr><td>Mar 18</td><td>Document Uploaded</td><td>March Board Meeting Minutes</td><td><span class="badge-pill badge-success">Published</span></td></tr>
       <tr><td>Mar 17</td><td>Late Fee Applied</td><td>Unit 312 — $25.00 late charge</td><td><span class="badge-pill badge-warning">Pending</span></td></tr>
       <tr><td>Mar 15</td><td>Payment Failed</td><td>Unit 205 — Card declined</td><td><span class="badge-pill badge-danger">Failed</span></td></tr>

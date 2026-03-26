@@ -51,6 +51,20 @@
     }
   });
 
+  // Select All checkbox — toggle all row checkboxes in the same table
+  document.addEventListener('change', function(e) {
+    if (e.target.type === 'checkbox') {
+      const th = e.target.closest('th');
+      if (th) {
+        const table = th.closest('table');
+        if (table) {
+          const rowCheckboxes = table.querySelectorAll('tbody input[type="checkbox"]');
+          rowCheckboxes.forEach(cb => cb.checked = e.target.checked);
+        }
+      }
+    }
+  });
+
   // Sidebar toggle
   document.getElementById('sidebarToggle').addEventListener('click', function() {
     sidebar.classList.toggle('show');
