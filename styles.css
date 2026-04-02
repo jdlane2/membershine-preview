@@ -54,8 +54,8 @@ body {
 }
 .logo-icon { flex-shrink: 0; }
 .logo-text { font-size: 1.25rem; font-weight: 600; }
-.logo-hoa { color: var(--ms-body-text); }
-.logo-start { color: var(--ms-primary); }
+.logo-member { color: var(--ms-body-text); }
+.logo-shine { color: var(--ms-primary); }
 
 .org-switcher {
   padding: 1rem 1rem 0.5rem;
@@ -85,7 +85,8 @@ body {
   background: color-mix(in srgb, var(--ms-primary) 10%, white);
   font-weight: 600;
 }
-.nav-icon { width: 1.25rem; text-align: center; font-size: 1rem; }
+.nav-icon { width: 1.25rem; text-align: center; font-size: 1rem; color: var(--ms-secondary); }
+.nav-link.active .nav-icon { color: var(--ms-primary); }
 .nav-chevron { margin-left: auto; font-size: 0.75rem; transition: transform 0.2s; }
 .nav-link.collapsed .nav-chevron { transform: rotate(-90deg); }
 
@@ -564,6 +565,46 @@ body {
 }
 .breadcrumb-nav a { color: var(--ms-primary); text-decoration: none; }
 .breadcrumb-nav a:hover { text-decoration: underline; }
+
+/* Invoice Detail */
+.invoice-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1.5rem;
+}
+.invoice-header h1 { margin-bottom: 0; }
+.invoice-actions { display: flex; gap: 0.5rem; align-items: center; }
+
+.line-items-table { width: 100%; border-collapse: collapse; margin-bottom: 1rem; }
+.line-items-table th {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: var(--ms-muted);
+  padding: 0.75rem;
+  border-bottom: 2px solid var(--ms-border);
+}
+.line-items-table td {
+  padding: 0.75rem;
+  border-bottom: 1px solid color-mix(in srgb, var(--ms-border) 50%, transparent);
+}
+.line-items-total td {
+  font-weight: 600;
+  border-top: 2px solid var(--ms-border);
+  padding-top: 0.75rem;
+}
+
+/* Activity Log */
+.activity-log { list-style: none; padding: 0; margin: 0; }
+.activity-log li {
+  display: flex;
+  gap: 0.75rem;
+  padding: 0.5rem 0;
+  font-size: 0.875rem;
+  border-bottom: 1px solid color-mix(in srgb, var(--ms-border) 50%, transparent);
+}
+.activity-log .activity-date { color: var(--ms-muted); white-space: nowrap; min-width: 7rem; }
 
 /* Responsive */
 @media (max-width: 991px) {
